@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="249dp"
+    tools:layout_editor_absoluteY="-379dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="393dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="1dp"
+        android:accessibilityHeading="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+        <CheckBox
+            android:id="@+id/checkBoxtassk"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:clickable="false"
+            android:contextClickable="false"
+            android:freezesText="false"
+            android:gravity="center"
+            android:selectAllOnFocus="false" />
+
+        <EditText
+            android:id="@+id/taskvalue"
+            android:layout_width="200dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Add Your Task......."
+            android:inputType="text|textMultiLine"
+            tools:layout_editor_absoluteY="-11dp" />
+
+        <Button
+            android:id="@+id/Addbut"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:backgroundTintMode="add"
+            android:baselineAlignBottom="false"
+            android:clickable="true"
+            app:backgroundTint="#C5F391"
+            app:borderWidth="5dp"
+            app:icon="@drawable/round_add_24"
+            app:iconGravity="textEnd"
+            app:srcCompat="@drawable/round_add_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/tasks1" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
